@@ -3,6 +3,10 @@ body{
     padding: 0%;
 }
 
+p{
+    font-style: italic;
+}
+
 .navBar{
     margin-top: 2dvh;
     width: 100%;
