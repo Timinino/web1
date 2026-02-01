@@ -162,3 +162,7 @@ td,th{
 #productInStore{
     color: red;
 }
+
+#productInWarehouse{
+    color: green;
+}

@@ -78,59 +78,99 @@ body{
 }
 
 .contactInfo {
-    width: 80%;
+    width: 60%;
     margin: auto;
-    margin-top: 2rem;
-    padding: 1.5rem;
-    display: flex; 
     justify-content: space-between; 
-    align-items: center; 
-    background-color: #ffffff; 
-    border-radius: 8px; 
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    border-top: 2px solid rgba(255, 199, 44);
+}
+
+.contactInfoDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .formContainer {
     text-align: center;
+    margin-top: 2dvw;
 }
 
 .contactTitle {
-    font-size: 1.8rem;
+    font-size: 1.5dvw;
+    margin-top: 2dvw;
     margin-bottom: 0.5rem;
 }
 
 .contactDetails {
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+    font-size: .9dvw;
 }
 
 .formContainer {
-    width: 40%;
-    padding: 2rem;
-    box-shadow: 1px 1px 5px black;
+    width: 60%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
     border-radius: 5px;
-    background-color: rgb(255, 199, 44)
 }
 
 .contactForm {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 }
 
 .formGroup {
+    width: 50%;
+}
+
+.formGroupDiv{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .formGroup label {
     font-weight: bold;
-    margin-bottom: 0.5rem;
 }
 
-.formGroup input, .formGroup select, .formGroup textarea {
-     padding: 0.3rem; border: 1px solid #000000; border-radius: 4px; font-size: 1rem; 
+input{
+    width: 70%;
+    margin: auto;
+    border: 2px solid rgba(255, 199, 44);
 }
+
+label{
+    width: 80%;
+    margin: auto;
+}
+
+select{
+    width: 70%;
+    margin: auto;
+    border: 2px solid rgba(255, 199, 44);
+}
+
+textarea{
+    width: 70%;
+    margin: auto;
+    border: 2px solid rgba(255, 199, 44);
+}
+
+button{
+    width: 70%;
+    margin-top: 1dvw;
+    margin-bottom: 1dvw;
+    font-size: 1dvw;
+    background-color: rgba(255, 199, 44);
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+    border-radius: 5%;
+    color: rgba(53, 90, 134);
+}
+
+button:hover{
+    background-color: rgb(240, 187, 41);
+    cursor: pointer;
+}
+    
 
 .storeList {
     position: fixed;

@@ -20,65 +20,58 @@
 
 <main>
 <section class="contactSection">
+
+    <h2 class="contactTitle">Contact Us</h2>
     <div class="contactInfo">
-
-        <div class="infoItem">
-            <h2 class="contactTitle">Contact Us</h2>
-        </div>
-
-        <div class="infoItem">
+        <div class="contactInfoDiv">
             <p class="contactDetails">Call us:<br>054 - 000 00 00</p>
-        </div>
 
-        <div class="infoItem">
             <p class="contactDetails">Mail us:<br>info@IKÈÄ.se</p>
-        </div>
 
-        <div class="infoItem">
             <p class="contactDetails">Open hours:<br>mon–fri 09:00–17:00</p>
         </div>
-
     </div>
 
 
-        <div class="formContainer">
-            <form class="contactForm" action="#" method="post">
+    <div class="formContainer">
+        <form class="contactForm" action="#" method="post">
+            <div class="formGroup">
+                    <div class="formGroupDiv">
+                        <br>
+                        <label for="">Name:</label>
+                        <input type="" id="name" name="name" required>
+                        <br>
+                        <br>
+                        <label for="">Email-address:</label>
+                        <input type="" id="epost" name="epost" required>
+                        <br>
+                        <br>
+                        <label for="">Telephone number:</label>
+                        <input type="" id="number" name="number" required>
+                        <br>
+                    </div>
+            </div>
 
-
-<div class="formGroup">
-    <label for="">Name:</label><br>
-    <input type="" id="name" name="name" required><br>
-</div>
-
-<div class="formGroup">
-  <label for="">Email-address:</label><br>
-  <input type="" id="epost" name="epost" required><br>
-</div>
-
-<div class="formGroup">
-  <label for="">Telephone number:</label><br>
-  <input type="" id="number" name="number" required>
-</div>
-
-<div class="formGroup">
-<label for="">What do you need help with:</label>
-<select name="" id="category" required>
-<option value="" disabled selected>Choose an alternative...</option>
-  <option value="">Refunds</option>
-  <option value="">IKÈÄ Membership</option>
-  <option value="">Job Application</option>
-  <option value="">Other</option>
-</select>
-</div>
-
-<div class="formGroup">
-<label for="description">Describe what you need help with</label> 
-<textarea id="description" name="description" rows="6" placeholder="Write your description here..." required></textarea>
-</div>
-
-<button type="" class="contactButton">Send</button>
- </form>
- </div>
+            <div class="formGroup">
+                <div class="formGroupDiv">
+                    <br>
+                    <label for="">What do you need help with:</label>
+                    <select name="" id="category" required>
+                        <option value="" disabled selected>Choose an alternative...</option>
+                        <option value="">Refunds</option>
+                        <option value="">IKÈÄ Membership</option>
+                        <option value="">Job Application</option>
+                        <option value="">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="description">Describe what you need help with</label> 
+                    <textarea id="description" name="description" rows="6" placeholder="Write your description here..." required></textarea>
+                </div>
+                <button type="submit" class="contactButton">Send</button>
+            </div>
+        </form>
+    </div>
  </section>
 </main>
 
