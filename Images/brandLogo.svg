@@ -1,0 +1,26 @@
+<svg
+  width="400"
+  height="180"
+  viewBox="0 0 400 180"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    x="0"
+    y="0"
+    width="400"
+    height="180"
+    fill="#FFC72C"
+  />
+  <text
+    x="200"
+    y="95"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Arial Black, Helvetica, sans-serif"
+    font-size="120"
+    font-weight="900"
+    fill="#355A86"
+  >
+    IKÉÄ
+  </text>
+</svg>

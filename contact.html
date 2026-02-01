@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contact.css">
+        <title>ContactPage</title>
+    </head>
+
+    <body>
+        <header class="navBar">
+            <div class="navBarLogoDiv">
+                <img class="navBarLogo" src="Images/brandLogo.svg" alt="Brand logo">
+                <p class="navBarSlogan">Make Anywhere Home</p>
+                <div class="navBarLinkDiv">
+                    <a class="navBarLink" id="navBarHomeLink" href="#">Home</a>
+                    <a class="navBarLink" id="navBarContactLink" href="#">Contact</a>
+                </div>
+            </div>
+        </header>
+
+<main>
+    <form>
+            <label for="name">Name:</label><br>
+            <input type="" id="name" name="name" required><br>
+            <label for="">Email-address:</label><br>
+            <input type="" id="epost" name="epost" required><br>
+            <label for="">Telephone number:</label><br>
+            <input type="" id="number" name="number" required>
+
+
+            <label for="cars">What do you need help with:</label>
+
+            <select name="" id="category" required>
+            <option value="" disabled selected>Choose an alternative...</option>
+            <option value="">Refunds</option>
+            <option value="">IKÈÄ Membership</option>
+            <option value="">Job Application</option>
+            <option value="">Other</option>
+            </select>
+
+            <label for="description">Describe what you need help with</label> 
+            <textarea id="description" name="description" rows="6" placeholder="Write your message here..." required></textarea>
+
+            <button type="">Send</button>
+        </form>
+    </main>
+</body>
+
+</html>
