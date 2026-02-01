@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="URF-8">
-        <link rel="stylesheet" href="products.css">
+        <link rel="stylesheet" href="Style/products.css">
         <title>ProductPage</title>
     </head>
 
@@ -32,25 +32,31 @@
 
                 <aside class="sideProductDiv">
                     <div class="prouctInfoDiv">
-                        <legend class="productName">Sleek simplistic modern sofa</legend>
-                        <div class="productInfoSubDiv">
-                            <p class="productInfoName">Dimensions</p>
-                            <div class="productDimensions">
-                                <p class="productInfo">Width - 2.5 meters</p>
-                                <p class="productInfo">Heigth - 1 meter</p>
-                                <p class="productInfo">Depth - 1 meter</p>
-                            </div>
-                            <p class="productInfoName">Colors</p>
-                            <div class="ProductColorDiv">
-                                <p class="productInfo" id="productInfoColor">Black</p>
-                                <p class="productInfo" id="productInfoColor2">Grey</p>
-                                <p class="productInfo" id="productInfoColor3">Blue</p>
-                            </div>
-                            <legend class="productInfoName">Availability</legend>
-                            <div class="productAvailability">
-                                <p class="productInfo">In store: <span class="inStoreSpan">0 left</span></p>
-                                <p class="productInfo">In warehouse: <span class="inWarehouseSpan">10 left</span><a class="productInfo" id="orderLink" href="https://www.kau.se/">Order</a></p>
-                            </div>
+                        <h3 class="productInfoHeader">Sleek simplistic modern sofa</h3>
+                        <table class="productInfoTable">
+                            <tr class="productInfoTableRow">
+                                <th>Dimentions</th>
+                                <th>Colors</th>
+                            </tr>
+                            <tr class="productInfoTableRow">
+                                <td>Width: 2.5m</td>
+                                <td id="productColor1">Black</td>
+                            </tr>
+                            <tr class="productInfoTableRow">
+                                <td>Heigth: 1m</td>
+                                <td id="productColor2">Grey</td>
+                            </tr>
+
+                            <tr class="productInfoTableRow">
+                                <td>Depth: 1m</td>
+                                <td id="productColor3">Blue</td>
+                            </tr>
+                        </table>
+
+                        <h3 class="productInfoHeader">Availability</h3>
+                        <div class="productAvailabilityDiv">
+                            <p>In store - <span class="productInStore">0 left</span></p>
+                            <p>In warehouse - <span class="productInWarehouse">10 left</span></p>
                         </div>
                     </div>
 

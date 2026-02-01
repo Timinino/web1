@@ -9,6 +9,10 @@ iframe{
     border: 0;
 }
 
+p{
+    font-size: 1dvw;
+}
+
 .navBar{
     margin-top: 2dvh;
     width: 100%;
@@ -118,89 +122,39 @@ iframe{
     height: 50%;
 }
 
+.productInfoHeader{
+    width: 80%;
+    margin: auto;
+    margin-top: 1dvw;
+    text-align: center;
+    font-size: 1.2dvw;
+    border-top: 2px solid rgba(255, 199, 44);
+}
+
 .productLocation{
     width: 100%;
     height: 50%;
 }
 
-.productName{
-    margin: auto;
-    margin-top: .5dvw;
-    text-align: center;
-    font-size: 1.3dvw;
+.productInfoTable{
     width: 80%;
-}
-
-.productInfoName{
     margin: auto;
-    margin-top: .5dvw;
-    text-align: center;
-    font-size: 1.1dvw;
-    width: 100%;
-    border-top: 2px solid rgba(255, 199, 44);
-    padding-top: .5rem;
 }
 
-.productInfo{
+.productInfoTable,th,td{
+    text-align: center;
+    padding: .2dvw;
+    border-spacing: .5dvw;
+}
+
+td,th{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.493);
     font-size: .8dvw;
 }
 
-.productInfoSubDiv{
+.productAvailabilityDiv{
     width: 80%;
-    height: 100%;
-    margin: auto;
-}
-
-.ProductColorDiv{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.productDimensions{
-    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-}
-
-.productAvailability{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-.inStoreSpan{
-    color: red;
-}
-
-.inWarehouseSpan{
-    color: green;
-}
-
-#productInfoColor2{
-    color: grey;
-}
-
-#productInfoColor3{
-    color: blue;
-}
-
-#orderLink{
-    margin-left: .3dvw;
-    color: rgba(53, 90, 134);
-    text-decoration: none;
-    background-color: rgba(255, 199, 44);
-    border-radius: 5%;
-    padding: .2dvw;
-    transition: .1s;
-}
-
-#orderLink:hover{
-    background-color: rgba(53, 90, 134);
-    color: rgba(255, 199, 44);
-    transition: .1s;
 }
