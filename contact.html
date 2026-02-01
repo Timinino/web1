@@ -3,8 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="contact.css">
-        <title>ContactPage</title>
-    </head>
+</head>
 
     <body>
         <header class="navBar">
@@ -13,37 +12,74 @@
                 <p class="navBarSlogan">Make Anywhere Home</p>
                 <div class="navBarLinkDiv">
                     <a class="navBarLink" id="navBarHomeLink" href="#">Home</a>
-                    <a class="navBarLink" id="navBarContactLink" href="#">Contact</a>
+                    <a class="navBarLink" id="navBarProductsLink" href="#">Products</a>
                 </div>
             </div>
         </header>
 
 <main>
-    <form>
-            <label for="name">Name:</label><br>
-            <input type="" id="name" name="name" required><br>
-            <label for="">Email-address:</label><br>
-            <input type="" id="epost" name="epost" required><br>
-            <label for="">Telephone number:</label><br>
-            <input type="" id="number" name="number" required>
+<section class="contactSection">
+    <div class="contactInfo">
+
+        <div class="infoItem">
+            <h2 class="contactTitle">Contact Us</h2>
+        </div>
+
+        <div class="infoItem">
+            <p class="contactDetails">Call us:<br>054 - 000 00 00</p>
+        </div>
+
+        <div class="infoItem">
+            <p class="contactDetails">Mail us:<br>info@IKÈÄ.se</p>
+        </div>
+
+        <div class="infoItem">
+            <p class="contactDetails">Open hours:<br>mon–fri 09:00–17:00</p>
+        </div>
+
+    </div>
 
 
-            <label for="cars">What do you need help with:</label>
+        <div class="formContainer">
+            <form class="contactForm" action="#" method="post">
 
-            <select name="" id="category" required>
-            <option value="" disabled selected>Choose an alternative...</option>
-            <option value="">Refunds</option>
-            <option value="">IKÈÄ Membership</option>
-            <option value="">Job Application</option>
-            <option value="">Other</option>
-            </select>
 
-            <label for="description">Describe what you need help with</label> 
-            <textarea id="description" name="description" rows="6" placeholder="Write your message here..." required></textarea>
+<div class="formGroup">
+    <label for="">Name:</label><br>
+    <input type="" id="name" name="name" required><br>
+</div>
 
-            <button type="">Send</button>
-        </form>
-    </main>
+<div class="formGroup">
+  <label for="">Email-address:</label><br>
+  <input type="" id="epost" name="epost" required><br>
+</div>
+
+<div class="formGroup">
+  <label for="">Telephone number:</label><br>
+  <input type="" id="number" name="number" required>
+</div>
+
+<div class="formGroup">
+<label for="">What do you need help with:</label>
+<select name="" id="category" required>
+<option value="" disabled selected>Choose an alternative...</option>
+  <option value="">Refunds</option>
+  <option value="">IKÈÄ Membership</option>
+  <option value="">Job Application</option>
+  <option value="">Other</option>
+</select>
+</div>
+
+<div class="formGroup">
+<label for="description">Describe what you need help with</label> 
+<textarea id="description" name="description" rows="6" placeholder="Write your description here..." required></textarea>
+</div>
+
+<button type="" class="contactButton">Send</button>
+ </form>
+ </div>
+ </section>
+</main>
 </body>
 
 </html>

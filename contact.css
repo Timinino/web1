@@ -67,3 +67,214 @@ body{
     border-right: 2px solid rgba(255, 199, 44);
     border-bottom: 2px solid rgba(255, 199, 44);
 }
+
+.bestDealsSection{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 5dvh;
+}
+
+.bestDealsLegend{
+    font-size: 1.2rem;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bestDeals{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4.5rem;
+    row-gap: 2rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.349);
+    padding-top: 1rem;
+}
+
+.bestDealsDiv{
+    width: 7rem;
+    height: fit-content;
+}
+
+.bestDealsImageDiv{
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    transition: .1s;
+}
+
+.bestDealsImageDiv:hover{
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    transition: .1s;
+}
+
+.bestDealsImageAnchor{
+    width: 100%;
+    height: 100%;
+}
+
+.bestDealsImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bestDealsDivPriceDiv{
+    width: 100%;
+    height: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.bestDealsPrice{
+    font-size: 1.1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:300;
+    text-decoration: line-through;
+}
+
+.bestDealsPriceDiscount{
+    font-size: 1.1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:300;
+    color: rgba(53, 90, 134);
+}
+
+.mainProductSection{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.ProductImageDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainProduct{
+    width: 65%;
+    height: 28dvw;
+}
+
+.mainProductImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sideProduct{
+    width: 35%;
+    height: 28dvw;
+}
+
+.productImageAnchor{
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+}
+
+.productImageAnchor:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.473);
+    transition: .2s;
+}
+
+.sideProductImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productTitle{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+.productInfo{
+    margin: auto;
+}
+
+.contactSection {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactInfo {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
+
+.formContainer {
+    text-align: center;
+}
+
+.contactTitle {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.contactDetails {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.formContainer {
+    width: 40%;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    background-color: rgb(255, 199, 44)
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.formGroup input, .formGroup select, .formGroup textarea {
+     padding: 0.3rem; border: 1px solid #000000; border-radius: 4px; font-size: 1rem; 
+}
