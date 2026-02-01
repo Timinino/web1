@@ -38,16 +38,14 @@
             <div class="formGroup">
                     <div class="formGroupDiv">
                         <br>
-                        <label for="">Name:</label>
-                        <input type="" id="name" name="name" required>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
                         <br>
+                        <label for="email">Email-address:</label>
+                        <input type="email" id="epost" name="epost">
                         <br>
-                        <label for="">Email-address:</label>
-                        <input type="" id="epost" name="epost" required>
-                        <br>
-                        <br>
-                        <label for="">Telephone number:</label>
-                        <input type="" id="number" name="number" required>
+                        <label for="telnumber">Telephone number:</label>
+                        <input type="tel" id="number" name="number">
                         <br>
                     </div>
             </div>
@@ -55,15 +53,14 @@
             <div class="formGroup">
                 <div class="formGroupDiv">
                     <br>
-                    <label for="">What do you need help with:</label>
-                    <select name="" id="category" required>
-                        <option value="" disabled selected>Choose an alternative...</option>
-                        <option value="">Refunds</option>
-                        <option value="">IKÈÄ Membership</option>
-                        <option value="">Job Application</option>
-                        <option value="">Other</option>
+                    <label for="cathegory">What do you need help with:</label>
+                    <select name="name" id="category">
+                        <option value="select" disabled selected>Choose an alternative...</option>
+                        <option value="refunds">Refunds</option>
+                        <option value="membership">IKÈÄ Membership</option>
+                        <option value="job">Job Application</option>
+                        <option value="other">Other</option>
                     </select>
-                    <br>
                     <br>
                     <label for="description">Describe what you need help with</label> 
                     <textarea id="description" name="description" rows="6" placeholder="Write your description here..." required></textarea>
