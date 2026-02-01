@@ -158,3 +158,7 @@ td,th{
     display: flex;
     justify-content: space-between;
 }
+
+#productInStore{
+    color: red;
+}
