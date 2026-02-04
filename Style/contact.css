@@ -7,6 +7,12 @@ p{
     font-style: italic;
 }
 
+:root{
+    --textColor: black;
+    --primaryColor: rgba(255, 199, 44);
+    --boxShadowColor: rgba(0, 0, 0, 0.466);
+}
+
 .navBar{
     margin-top: 2dvh;
     width: 100%;
