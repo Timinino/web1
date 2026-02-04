@@ -39,7 +39,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    box-shadow: var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -52,7 +52,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: var(--primaryColor);
 }
 
 .navBarLink{
@@ -63,26 +63,26 @@ p{
     font-size: 120%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
     transition: .1s;
 }
 
 .navBarLink:hover{
     transition: .1s;
-    color: rgba(255, 199, 44);
+    color: var(--primaryColor);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
 }
 
 #navBarHomeLink:hover{
     transition: .1s;
-    border-left: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+    border-left: var(--primaryColor);
+    border-bottom: var(--primaryColor);
 }
 
 #navBarContactLink:hover{
     transition: .1s;
-    border-right: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+    border-right: var(--primaryColor);
+    border-bottom: var(--primaryColor);
 }
 
 .productSection{
@@ -106,7 +106,7 @@ p{
 .productImageDiv{
     width: 100%;
     height: 48%;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.349);
+    box-shadow: var(--boxShadowColor);
 }
 
 .productImage{
@@ -121,7 +121,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.349);
+    box-shadow: var(--boxShadowColor);
 }
 
 .prouctInfoDiv{
@@ -135,7 +135,7 @@ p{
     margin-top: 1dvw;
     text-align: center;
     font-size: 1.2dvw;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: var(--primaryColor);
 }
 
 .productLocation{
@@ -155,7 +155,7 @@ p{
 }
 
 td,th{
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.493);
+    box-shadow: var(--boxShadowColor);
     font-size: .8dvw;
 }
 
