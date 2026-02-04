@@ -10,16 +10,19 @@ p{
 :root{
     --textColor: black;
     --primaryColor: rgba(255, 199, 44);
-    --boxShadowColor: rgba(0, 0, 0, 0.466);
+    --secendaryColor: rgba(53, 90, 134);
+    --boxShadowColor: rgba(0, 0, 0, 0.301);
 }
 
-.navBar{
+.navBarHeader{
+    position: relative;
     margin-top: 2dvh;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .navBarLogoDiv{
@@ -32,7 +35,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -40,44 +43,89 @@ p{
     font-family:serif;
 }
 
-.navBarLinkDiv{
-    margin-top: 1dvh;
+.navBar{
     width: 100%;
-    display: flex;
+    margin: auto;
+    height: fit-content;
     justify-content: space-around;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: 2px solid var(--primaryColor);
 }
 
-.navBarLink{
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
-    width: 50%;
-    height: 100%;
-    font-size: 120%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navBarList{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBarList>li{
+    position: relative;
+    transition: .1s;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: black;
-    transition: .1s;
+    cursor: pointer;
+    padding: .5dvw;
+    transition: .2s;
 }
 
-.navBarLink:hover{
-    transition: .1s;
-    color: rgba(255, 199, 44);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+.navBarList>li>a{
+    text-decoration: none;
+    color: var(--textColor);
+    transition: .2s;
 }
 
-#navBarHomeLink:hover{
-    transition: .1s;
-    border-left: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+.navBarProductList{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--primaryColor);
+    transition: .2s;
+    box-shadow: 0px 0px 5px var(--boxShadowColor);
 }
 
-#navBarContactLink:hover{
-    transition: .1s;
-    border-right: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+.navBarProductList>li{
+    padding: .5dvw;
 }
 
+.productListLink{
+    color: var(--secendaryColor);
+}
+
+
+.navBarProductList>li:hover{
+    background-color: var(--secendaryColor);
+}
+
+.navBarProductList>li:hover>a{
+    color: var(--primaryColor);
+}
+
+.navBarList>li:hover>.navBarProductList {
+    display: block;
+}
+
+.navBarProductList>li>a{
+    transition: .1s;
+    text-decoration: none;
+    color: var(--secendaryColor);
+    font-weight: bold;
+}
+
+#homeLink:hover{
+    transition: .1s;
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+#contactLink:hover{
+    transition: .1s;
+    border-bottom: 2px solid var(--primaryColor);
+}
 .contactSection {
     width: 70%;
     margin: auto;
@@ -92,7 +140,7 @@ p{
     margin: auto;
     justify-content: space-between; 
     text-align: center;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .contactInfoDiv{
@@ -119,7 +167,7 @@ p{
 
 .formContainer {
     width: 60%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
     border-radius: 5px;
 }
 
@@ -144,7 +192,7 @@ p{
 input{
     width: 70%;
     margin: auto;
-    border: 2px solid rgba(255, 199, 44);
+    border: 2px solid var(--primaryColor);
 }
 
 label{
@@ -155,13 +203,13 @@ label{
 select{
     width: 70%;
     margin: auto;
-    border: 2px solid rgba(255, 199, 44);
+    border: 2px solid var(--primaryColor);
 }
 
 textarea{
     width: 70%;
     margin: auto;
-    border: 2px solid rgba(255, 199, 44);
+    border: 2px solid var(--primaryColor);
 }
 
 button{
@@ -169,9 +217,9 @@ button{
     margin-top: 1dvw;
     margin-bottom: 1dvw;
     font-size: 1dvw;
-    background-color: rgba(255, 199, 44);
+    background-color: var(--primaryColor);
     border: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+    box-shadow: 0px 0px 5px var(--boxShadowColor);
     border-radius: 5%;
     color: rgba(53, 90, 134);
 }
@@ -188,7 +236,7 @@ button:hover{
     right: 20px;
     width: 200px;
     padding: 1.2rem;
-    background-color: rgb(255, 199, 44);
-    box-shadow: 0px 0px 10px black;
+    background-color: var(--primaryColor);
+    box-shadow: 0px 0px 10px var(--boxShadowColor);
     z-index: 1000;
 }

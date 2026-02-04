@@ -7,14 +7,23 @@
     </head>
 
     <body>
-        <header class="navBar">
+        <header class="navBarHeader">
             <div class="navBarLogoDiv">
                 <img class="navBarLogo" src="Images/brandLogo.svg" alt="Brand logo">
                 <p class="navBarSlogan">Make Anywhere Home</p>
-                <div class="navBarLinkDiv">
-                    <a class="navBarLink" id="navBarHomeLink" href="https://timinino.github.io/web1/home">Home</a>
-                    <a class="navBarLink" id="navBarProductsLink" href="https://timinino.github.io/web1/products">Products</a>
-                </div>
+                <nav class="navBar">
+                    <ul class="navBarList">
+                        <li id="homeLink"><a href="https://timinino.github.io/web1/home">Home</a></li>
+                        <li>Products
+                            <ul class="navBarProductList">
+                                <li><a class="productListLink" href="https://timinino.github.io/web1/products">product</a></li>
+                                <li><a class="productListLink" href="https://timinino.github.io/web1/products">product</a></li>
+                                <li><a class="productListLink" href="https://timinino.github.io/web1/products">product</a></li>
+                            </ul>
+                        </li>
+                        <li id="contactLink"><a href="https://timinino.github.io/web1/contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
