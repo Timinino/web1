@@ -32,7 +32,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -56,26 +56,26 @@ p{
     font-size: 120%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: var(--textColor);
+    color: 2px var(--textColor);
     transition: .1s;
 }
 
 .navBarLink:hover{
     transition: .1s;
     color: var(--primaryColor);
-    text-shadow: var(--textColor);
+    text-shadow: 1px 1px 1px var(--textColor);
 }
 
 #navBarHomeLink:hover{
     transition: .1s;
-    border-left: var(--primaryColor);
-    border-bottom: var(--primaryColor);
+    border-left: 2px var(--primaryColor);
+    border-bottom: 2px  var(--primaryColor);
 }
 
 #navBarContactLink:hover{
     transition: .1s;
-    border-right: var(--primaryColor);
-    border-bottom: var(--primaryColor);
+    border-right: 2px var(--primaryColor);
+    border-bottom: 2px var(--primaryColor);
 }
 
 .contactSection {
@@ -92,7 +92,7 @@ p{
     margin: auto;
     justify-content: space-between; 
     text-align: center;
-    border-top: var(--primaryColor);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .contactInfoDiv{
@@ -119,7 +119,7 @@ p{
 
 .formContainer {
     width: 60%;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
     border-radius: 5px;
 }
 
@@ -144,7 +144,7 @@ p{
 input{
     width: 70%;
     margin: auto;
-    border: var(--primaryColor);
+    border: 2px var(--primaryColor);
 }
 
 label{
@@ -155,13 +155,13 @@ label{
 select{
     width: 70%;
     margin: auto;
-    border: var(--primaryColor);
+    border: 2px var(--primaryColor);
 }
 
 textarea{
     width: 70%;
     margin: auto;
-    border: var(--primaryColor);
+    border: 2px var(--primaryColor);
 }
 
 button{
@@ -171,7 +171,7 @@ button{
     font-size: 1dvw;
     background-color: var(--primaryColor);
     border: none;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 0px 0px 5px var(--boxShadowColor);
     border-radius: 5%;
     color: rgba(53, 90, 134);
 }
@@ -189,6 +189,6 @@ button:hover{
     width: 200px;
     padding: 1.2rem;
     background-color: var(--primaryColor);
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 0px 0px 10px var(--boxShadowColor);
     z-index: 1000;
 }

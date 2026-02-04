@@ -39,7 +39,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -52,7 +52,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: var(--primaryColor);
+    border-top: 2px var(--primaryColor);
 }
 
 .navBarLink{
@@ -70,19 +70,19 @@ p{
 .navBarLink:hover{
     transition: .1s;
     color: var(--primaryColor);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+    text-shadow: 1px 1px 1px var(--boxShadowColor);
 }
 
 #navBarHomeLink:hover{
     transition: .1s;
-    border-left: var(--primaryColor);
-    border-bottom: var(--primaryColor);
+    border-left: 2px var(--primaryColor);
+    border-bottom: 2px var(--primaryColor);
 }
 
 #navBarContactLink:hover{
     transition: .1s;
-    border-right: var(--primaryColor);
-    border-bottom: var(--primaryColor);
+    border-right: 2px var(--primaryColor);
+    border-bottom: 2px var(--primaryColor);
 }
 
 .productSection{
@@ -106,7 +106,7 @@ p{
 .productImageDiv{
     width: 100%;
     height: 48%;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 0px 0px 6px var(--boxShadowColor);
 }
 
 .productImage{
@@ -121,7 +121,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 0px 0px 6px var(--boxShadowColor);
 }
 
 .prouctInfoDiv{
@@ -135,7 +135,7 @@ p{
     margin-top: 1dvw;
     text-align: center;
     font-size: 1.2dvw;
-    border-top: var(--primaryColor);
+    border-top: 2px var(--primaryColor);
 }
 
 .productLocation{
@@ -155,7 +155,7 @@ p{
 }
 
 td,th{
-    box-shadow: var(--boxShadowColor);
+    box-shadow: 0px 0px 3px var(--boxShadowColor);
     font-size: .8dvw;
 }
 
