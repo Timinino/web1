@@ -17,16 +17,19 @@ p{
 :root{
     --textColor: black;
     --primaryColor: rgba(255, 199, 44);
+    --secendaryColor: rgba(53, 90, 134);
     --boxShadowColor: rgba(0, 0, 0, 0.466);
 }
 
-.navBar{
+.navBarHeader{
+    position: relative;
     margin-top: 2dvh;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .navBarLogoDiv{
@@ -39,7 +42,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -47,42 +50,83 @@ p{
     font-family:serif;
 }
 
-.navBarLinkDiv{
-    margin-top: 1dvh;
+.navBar{
     width: 100%;
-    display: flex;
+    margin: auto;
+    height: fit-content;
     justify-content: space-around;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: 2px solid var(--primaryColor);
 }
 
-.navBarLink{
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
-    width: 50%;
-    height: 100%;
-    font-size: 120%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.navBarList{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBarList>li{
+    transition: .1s;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: black;
-    transition: .1s;
+    cursor: pointer;
+    padding: .5dvw;
 }
 
-.navBarLink:hover{
-    transition: .1s;
-    color: rgba(255, 199, 44);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+.navBarList>li>a{
+    text-decoration: none;
+    color: var(--textColor);
 }
 
-#navBarHomeLink:hover{
-    transition: .1s;
-    border-left: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+.dropdown{
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--primaryColor);
 }
 
-#navBarContactLink:hover{
+.dropdown>li{
+    padding: .8dvw;
+}
+
+.productListLink{
+    color: var(--secendaryColor);
+}
+
+
+.dropdown>li:hover{
+    background-color: var(--secendaryColor);
+}
+
+.dropdown>li:hover>a{
+    color: var(--primaryColor);
+}
+
+.dropdown>li>a{
     transition: .1s;
-    border-right: 2px solid rgba(255, 199, 44);
-    border-bottom: 2px solid rgba(255, 199, 44);
+    text-decoration: none;
+    color: var(--secendaryColor);
+    font-weight: bold;
+}
+
+.navBarList > li:hover > .dropdown {
+    display: block;
+}
+
+#homeLink:hover{
+    transition: .1s;
+    border-left: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
+}
+
+#contactLink:hover{
+    transition: .1s;
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 .productSection{
@@ -106,7 +150,7 @@ p{
 .productImageDiv{
     width: 100%;
     height: 48%;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.349);
+    box-shadow: 0px 0px 6px var(--boxShadowColor);
 }
 
 .productImage{
@@ -121,7 +165,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.349);
+    box-shadow: 0px 0px 6px var(--boxShadowColor);
 }
 
 .prouctInfoDiv{
@@ -135,7 +179,7 @@ p{
     margin-top: 1dvw;
     text-align: center;
     font-size: 1.2dvw;
-    border-top: 2px solid rgba(255, 199, 44);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .productLocation{
@@ -155,7 +199,7 @@ p{
 }
 
 td,th{
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 3px var(--boxShadowColor);
     font-size: .8dvw;
 }
 
