@@ -25,7 +25,7 @@ p{
     z-index: 1;
 }
 
-.navBarLogoDiv{ /*Storlek och positionering för loggan*/
+.navBarLogoDiv{
     width: 14rem;
     height: 8rem;
     text-align: center;
