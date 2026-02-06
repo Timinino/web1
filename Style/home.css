@@ -35,7 +35,7 @@ p{
     width: 100%;
     height: fit-content;
     object-fit: fill;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    box-shadow: 1px 1px 5px var(--boxShadowColor);
 }
 
 .navBarSlogan{
@@ -77,10 +77,8 @@ p{
     transition: .2s;
 }
 
-.navBarProductList{
-    position: absolute;
-    top: 100%;
-    left: 0;
+.dropdown{
+    position: relative;
     display: none;
     list-style-type: none;
     padding: 0;
@@ -89,8 +87,8 @@ p{
     box-shadow: 0px 0px 5px var(--boxShadowColor);
 }
 
-.navBarProductList>li{
-    padding: .5dvw;
+.dropdown>li{
+    padding: .8dvw;
 }
 
 .productListLink{
@@ -98,32 +96,34 @@ p{
 }
 
 
-.navBarProductList>li:hover{
+.dropdown>li:hover{
     background-color: var(--secendaryColor);
 }
 
-.navBarProductList>li:hover>a{
+.dropdown>li:hover>a{
     color: var(--primaryColor);
 }
 
-.navBarList>li:hover>.navBarProductList {
-    display: block;
-}
-
-.navBarProductList>li>a{
+.dropdown>li>a{
     transition: .1s;
     text-decoration: none;
     color: var(--secendaryColor);
     font-weight: bold;
 }
 
+.navBarList > li:hover > .dropdown {
+    display: block;
+}
+
 #homeLink:hover{
     transition: .1s;
+    border-left: 2px solid var(--primaryColor);
     border-bottom: 2px solid var(--primaryColor);
 }
 
 #contactLink:hover{
     transition: .1s;
+    border-right: 2px solid var(--primaryColor);
     border-bottom: 2px solid var(--primaryColor);
 }
 
