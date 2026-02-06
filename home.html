@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--Förklarar för webbläsaren att detta är en HTML-5 fil-->
+<html lang="en"> <!--Deklarerar vilket språk som koden är skriven i. Hjälpsamt för ex skärmläsare-->
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"><!--Vilket "karaktärpaket" som används så att webbsidan uppfattar tecken,
+         bokstäver mm på ett korrekt sätt -->
         <link rel="stylesheet" href="Style/home.css">
         <title>HomePage</title>
     </head>
-
     <body>
-        <header class="navBarHeader">
-            <div class="navBarLogoDiv">
+        <header class="navBar"> <!--Här lägger vi navigeringsknappar samt logga-->
+            <div class="navBarLogoDiv"> <!--div för logga och slogan-->
                 <img class="navBarLogo" src="Images/brandLogo.svg" alt="Brand logo">
                 <p class="navBarSlogan"><i>Make Anywhere Home</i></p>
-                <nav class="navBar">
+                <nav class="navBar"><!--här våran navbar med listor-->
                     <ul class="navBarList" id="menu">
                         <li id="homeLink"><a href="#">Home</a></li>
                         <li>Products
@@ -27,8 +27,8 @@
             </div>
         </header>
 
-        <main>
-            <section class="bestDealsSection">
+        <main> <!--main sectionen där alla producter i websidan ligger-->
+            <section class="bestDealsSection"> <!--en section som består av "best deals"-->
                 <h2 class="bestDealsLegend">Selected furniture deals - this month</h2>
                 <div class="bestDeals">
                     <div class="bestDealsDiv">
@@ -117,7 +117,7 @@
                 </div>
             </section>
 
-            <section class="mainProductSection">
+            <section class="mainProductSection"><!--en section som innehåller main products-->
                 <div class="mainProduct">
                     <div class="ProductImageDiv">
                         <a class="productImageAnchor" href="https://timinino.github.io/web1/products" target="_blank">
