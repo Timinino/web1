@@ -11,11 +11,20 @@
         <header class="navBar"> <!--Här lägger vi navigeringsknappar samt logga-->
             <div class="navBarLogoDiv"> <!--div för logga och slogan-->
                 <img class="navBarLogo" src="Images/brandLogo.svg" alt="Brand logo">
-                <p class="navBarSlogan">Make Anywhere Home</p>
-                <div class="navBarLinkDiv"> <!--div för navigering-->
-                    <a class="navBarLink" id="navBarHomeLink" href="https://timinino.github.io/web1/home">Home</a>
-                    <a class="navBarLink" id="navBarProductsLink" href="https://timinino.github.io/web1/products">Products</a>
-                </div>
+                <p class="navBarSlogan"><i>Make Anywhere Homelala</i></p>
+                <nav class="navBar">
+                    <ul class="navBarList" id="menu">
+                        <li id="homeLink"><a href="#">Home</a></li>
+                        <li>Products
+                            <ul class="dropdown">
+                                <li><a class="productListLink" href="#">product</a></li>
+                                <li><a class="productListLink" href="#">product</a></li>
+                                <li><a class="productListLink" href="#">product</a></li>
+                            </ul>
+                        </li>
+                        <li id="contactLink"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
