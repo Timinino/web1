@@ -60,7 +60,7 @@ p{
     padding: 0;
 }
 
-.navBarList>li{
+.navBarList>li{ /*träffar listraderna under klassen navBarList*/
     transition: .1s;
     font-size: 1.2rem;
     text-decoration: none;
