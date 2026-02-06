@@ -1,20 +1,20 @@
-body{
-    margin: 0%;
-    padding: 0%;
+body{ 
+    margin: 0%; /* Sätter avstånd till 0% både innanför rutan samt utanför */
+    padding: 0%; 
 }
 
 p{
-    font-style: italic;
+    font-style: italic; /*sätter all textformat inom paragraf-taggar till italic*/
 }
 
-:root{
+:root{ /* skapar "variabler" av textfärg, layoutfärg samt box-shadow så att det blir enkelt att ändra på allt innehåll med enstaka rader */
     --textColor: black;
     --primaryColor: rgba(255, 199, 44);
-    --boxShadowColor: rgba(0, 0, 0, 0.466);
+    --boxShadowColor: rgba(0, 0, 0, 0.466); 
 }
-
+/* nedan kontrollerar vi utseende för varje given klass*/
 .navBar{
-    margin-top: 2dvh;
+    margin-top: 2dvh; /*använder dvh för dynamisk anpassning */
     width: 100%;
     height: fit-content;
     display: flex;
@@ -22,7 +22,7 @@ p{
     align-items: center;
 }
 
-.navBarLogoDiv{
+.navBarLogoDiv{ /*Storlek och positionering för loggan*/
     width: 14rem;
     height: 8rem;
     text-align: center;
@@ -45,7 +45,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: var(--primaryColor);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .navBarLink{
@@ -68,14 +68,14 @@ p{
 
 #navBarHomeLink:hover{
     transition: .1s;
-    border-left: 2px var(--primaryColor);
-    border-bottom: 2px  var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 #navBarContactLink:hover{
     transition: .1s;
-    border-right: 2px var(--primaryColor);
-    border-bottom: 2px var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 .contactSection {
@@ -144,7 +144,7 @@ p{
 input{
     width: 70%;
     margin: auto;
-    border: 2px var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 
 label{
@@ -155,13 +155,13 @@ label{
 select{
     width: 70%;
     margin: auto;
-    border: 2px var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 
 textarea{
     width: 70%;
     margin: auto;
-    border: 2px var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 
 button{

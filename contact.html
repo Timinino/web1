@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--Förklarar för webbläsaren att detta är en HTML-5 fil-->
+<html lang="en"> <!--Deklarerar vilket språk som koden är skriven i. Hjälpsamt för ex skärmläsare-->
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="Style/contact.css">
+        <meta charset="UTF-8"> <!--Vilket "karaktärpaket" som används så att webbsidan uppfattar tecken,
+         bokstäver mm på ett korrekt sätt -->
+        <link rel="stylesheet" href="Style/contact.css"> <!--Länkar ihop css filen till denna html-fil-->
         <title>ContactPage</title>
     </head>
 
     <body>
-        <header class="navBar">
-            <div class="navBarLogoDiv">
+        <header class="navBar"> <!--Här lägger vi navigeringsknappar samt logga-->
+            <div class="navBarLogoDiv"> <!--div för logga och slogan-->
                 <img class="navBarLogo" src="Images/brandLogo.svg" alt="Brand logo">
                 <p class="navBarSlogan">Make Anywhere Home</p>
-                <div class="navBarLinkDiv">
+                <div class="navBarLinkDiv"> <!--div för navigering-->
                     <a class="navBarLink" id="navBarHomeLink" href="https://timinino.github.io/web1/home">Home</a>
                     <a class="navBarLink" id="navBarProductsLink" href="https://timinino.github.io/web1/products">Products</a>
                 </div>
@@ -19,7 +20,7 @@
         </header>
 
 <main>
-<section class="contactSection">
+<section class="contactSection"> <!--sektion för kontaktinformation-->
 
     <h2 class="contactTitle">Contact Us</h2>
     <div class="contactInfo">
@@ -33,13 +34,13 @@
     </div>
 
 
-    <div class="formContainer">
+    <div class="formContainer"> <!--Här stylear vi formuläret-->
         <form class="contactForm" action="#" method="post">
             <div class="formGroup">
                     <div class="formGroupDiv">
                         <br>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
+                        <label for="name">Name:</label> <!--label, visuell förtydling för vad användaren ska mata in-->
+                        <input type="text" id="name" name="name"> <!--input, vad användaren matar in-->
                         <br>
                         <label for="epost">Email-address:</label>
                         <input type="email" id="epost" name="epost">
@@ -50,14 +51,14 @@
                     </div>
             </div>
 
-            <div class="formGroup">
+            <div class="formGroup"> <!--dropdownmeny, textruta samt send-knapp-->
                 <div class="formGroupDiv">
                     <br>
                     <label for="category">What do you need help with:</label>
-                    <select name="name" id="category">
+                    <select name="name" id="category"> <!--Dropdown-meny används här med "select"-->
                         <option value="select" disabled selected>Choose an alternative...</option>
                         <option value="refunds">Refunds</option>
-                        <option value="membership">IKÈÄ Membership</option>
+                        <option value="membership">IKÈÄ Membership</option> <!--varje optionrad är ett eget alternativ i menyn-->
                         <option value="job">Job Application</option>
                         <option value="other">Other</option>
                     </select>
@@ -72,9 +73,9 @@
  </section>
 </main>
 
-<aside class="storeList">
+<aside class="storeList"> <!--aside används här för att få en sidoruta med telnummer till olika butiker-->
     <h3> Contact a specific store:</h3>
-<ul>
+<ul> <!--Här inför vi en ul, alltså en unordered list-->
     <li><strong>Karlstad</strong><br>054 - 111 11 11</li>
     <li><strong>Stockholm</strong><br>054 - 222 22 22</li>
     <li><strong>Göteborg</strong><br>054 - 333 33 33</li>

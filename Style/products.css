@@ -52,7 +52,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-top: 2px var(--primaryColor);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .navBarLink{
@@ -75,14 +75,14 @@ p{
 
 #navBarHomeLink:hover{
     transition: .1s;
-    border-left: 2px var(--primaryColor);
-    border-bottom: 2px var(--primaryColor);
+    border-left: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 #navBarContactLink:hover{
     transition: .1s;
-    border-right: 2px var(--primaryColor);
-    border-bottom: 2px var(--primaryColor);
+    border-right: 2px solid var(--primaryColor);
+    border-bottom: 2px solid var(--primaryColor);
 }
 
 .productSection{
@@ -135,7 +135,7 @@ p{
     margin-top: 1dvw;
     text-align: center;
     font-size: 1.2dvw;
-    border-top: 2px var(--primaryColor);
+    border-top: 2px solid var(--primaryColor);
 }
 
 .productLocation{
